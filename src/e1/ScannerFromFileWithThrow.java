@@ -12,7 +12,6 @@ public class ScannerFromFileWithThrow {
             ex.printStackTrace();
         }
     }
-
     public static void readFile() throws FileNotFoundException {
         Scanner in = new Scanner(new File("test.in"));
         while (in.hasNextLine()) {
