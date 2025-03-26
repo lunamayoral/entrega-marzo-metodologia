@@ -27,4 +27,6 @@ class MethodCallStackDemoTest {
     void methodC() {
         assertDoesNotThrow(() -> MethodCallStackDemo.methodC());
     }
+
+
 }
