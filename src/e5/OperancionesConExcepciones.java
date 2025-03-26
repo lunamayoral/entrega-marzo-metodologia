@@ -33,10 +33,21 @@ public class OperancionesConExcepciones {
         try {
             methodD(i);
         } catch (XxxException ex) {// Exception handler for XxxException
+            System.out.println("Exception Xxx caught en MethodC: " + ex.getMessage());
         } catch (YyyException ex) {// Exception handler for YyyException
+            System.out.println("Exception Yyy caught en MethodC: " + ex.getMessage());
         } finally {// optional
 // These codes always run, used for cleaning up
             System.out.println("Errores solucionados");
         }
+    }
+    public void methodC() throws XxxException, YyyException {   // for next higher-level method to handle
+        // uses methodD() which declares "throws XxxException, YyyException"
+        methodD(int i);
+
+            // method body throw XxxException and YyyException
+
+        // no need for try-catch
+
     }
 }
