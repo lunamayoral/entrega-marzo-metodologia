@@ -1,5 +1,5 @@
 package e7;
-
+//este es un ejemplo de IllegalArgumentException
 public class Rectangulo {
     private double ancho;
     private double alto;

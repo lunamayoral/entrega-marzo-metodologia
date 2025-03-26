@@ -1,5 +1,5 @@
 package e7;
-
+// este es un ejemplo de IllegalStateException
 public class ConexionBaseDatos {
     private boolean conectado;
 
