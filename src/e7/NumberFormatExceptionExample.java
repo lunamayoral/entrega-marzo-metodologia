@@ -11,7 +11,6 @@ public class NumberFormatExceptionExample {
 
         try {
             int number = Integer.parseInt(invalidNumber);
-            System.out.println("El número es: " + number);
         } catch (NumberFormatException e) {
             System.out.println("Error: La cadena no tiene un formato numérico válido.");
             e.printStackTrace();

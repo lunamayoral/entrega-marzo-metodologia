@@ -10,7 +10,6 @@ public class ClassCastExceptionExample {
         Object o = new Object();
         try {
             Integer i = (Integer) o;
-            System.out.println("El número es: " + i);
         } catch (ClassCastException e) {
             System.out.println("Error: No se puede convertir el objeto a Integer.");
             e.printStackTrace();
