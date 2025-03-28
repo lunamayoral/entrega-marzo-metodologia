@@ -18,6 +18,24 @@ package e8;
             } catch (MyMagicException ex) {   // Manejador de excepciones
                 ex.printStackTrace();
             }
+
+
+        ListayExcepcion<String> lista = new ListayExcepcion<>(5); // Instancia la lista con capacidad 5
+
+        try {
+            // Llamar a setElemento para agregar elementos
+            lista.setElemento(0, "Primer Elemento"); // Índice válido
+            lista.setElemento(10, "Elemento Inválido"); // Índice inválido, lanzará una excepción
+
+            // Recuperar un elemento válido
+            System.out.println("Elemento en índice 0: " + lista.getElemento(0));
+
+            // Intentar recuperar un elemento fuera del rango
+            System.out.println("Elemento en índice 10: " + lista.getElemento(10));
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.err.println("Excepción de índice fuera de rango capturada en main: " + e.getMessage());
+            e.printStackTrace();
         }
+    }
     }
 
