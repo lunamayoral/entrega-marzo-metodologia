@@ -2,6 +2,8 @@ package e1;
 
 import org.junit.jupiter.api.Test;
 
+import java.io.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ScannerFromFileWTTest {
@@ -17,5 +19,6 @@ class ScannerFromFileWTTest {
 
     @Test
     void readFile() {
+
     }
 }
