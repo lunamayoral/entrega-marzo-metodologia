@@ -53,7 +53,6 @@ public class ConexionBaseDatos {
         } catch (IllegalStateException e) {
             System.out.println("Error: " + e.getMessage());
         }
-
         try {
             conexion.conectar(); // Establece la conexión
             conexion.realizarConsulta("SELECT * FROM usuarios"); // Realiza la consulta
