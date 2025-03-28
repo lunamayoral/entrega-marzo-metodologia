@@ -1,25 +1,53 @@
 package e3;
 
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 class ExceptionHandlingExampleTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void main() {
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+        ExceptionHandlingExample.main(new String[]{});
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void methodA() {
+        ExceptionHandlingExample example = new ExceptionHandlingExample();
+        Exception exception = assertThrows(XxxException.class, () -> {
+            example.methodA();
+        });
+        assertEquals("An error occurred in methodD", exception.getMessage());
     }
 
-    @org.junit.jupiter.api.Test
-    void methodB() {
+
+    @Test
+    void methodB() {ExceptionHandlingExample example = new ExceptionHandlingExample();
+        Exception exception = assertThrows(XxxException.class, () -> {
+            example.methodB();
+        });
+
+        assertEquals("An error occurred in methodD", exception.getMessage());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void methodC() {
+        ExceptionHandlingExample example = new ExceptionHandlingExample();
+        Exception exception = assertThrows(XxxException.class, () -> {
+            example.methodC();
+        });
+
+        assertEquals("An error occurred in methodD", exception.getMessage());
     }
 
-    @org.junit.jupiter.api.Test
-    void methodD() {
+    @Test
+    void methodD() {ExceptionHandlingExample example = new ExceptionHandlingExample();
+        Exception exception = assertThrows(XxxException.class, () -> {
+            example.methodD();
+        });
+
+        assertEquals("An error occurred in methodD", exception.getMessage());
     }
 }
