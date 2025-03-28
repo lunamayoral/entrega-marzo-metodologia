@@ -15,7 +15,7 @@ public class ScannerFromFileTCF {
                 System.out.println(line);
             }
         } catch (FileNotFoundException ex) { // error handling separated from the main logic
-            System.err.println("El archivo no se pudo encontrar: " + ex.getMessage());
+            System.out.println("El archivo no se pudo encontrar: " + ex.getMessage());
             ex.printStackTrace();
         } finally {
             if (in != null) {
