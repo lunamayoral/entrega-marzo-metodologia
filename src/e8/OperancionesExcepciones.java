@@ -11,7 +11,7 @@ class YyyException extends Exception {
     }
 }
 
-public class OperancionesConExcepciones {
+public class OperancionesExcepciones {
     public static void main(String[] args) {
         methodC(1);
         methodC(-1);

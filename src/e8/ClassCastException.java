@@ -1,8 +1,8 @@
 package e8;
 
-public class ClassCastExceptionExample {
+public class ClassCastException extends Throwable {
     public static void main(String[] args) {
-        ClassCastExceptionExample example = new ClassCastExceptionExample();
+        ClassCastException example = new ClassCastException();
         example.triggerClassCastException();
     }
 
@@ -10,7 +10,7 @@ public class ClassCastExceptionExample {
         Object o = new Object();
         try {
             Integer i = (Integer) o;
-        } catch (ClassCastException e) {
+        } catch (java.lang.ClassCastException e) {
             System.out.println("Error: No se puede convertir el objeto a Integer.");
             e.printStackTrace();
         }

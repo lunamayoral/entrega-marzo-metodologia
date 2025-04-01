@@ -1,6 +1,6 @@
 package e8;
 
-public class ArrayIndexOutOfBoundsExceptionExample {
+public class ArrayIndexOutOfBoundsExceptionExamples {
     public static void main(String[] args) {
         try {
             int[] anArray = new int[3];
