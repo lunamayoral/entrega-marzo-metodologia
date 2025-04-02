@@ -25,6 +25,6 @@ class ScannerFromFileTCFTest {
 
         // Verificar el mensaje de error.
         String output = outputStream.toString();
-        assertFalse(output.contains("El archivo no se pudo encontrar"));
+        assertTrue(output.contains("El archivo no se pudo encontrar"));
     }
 }
