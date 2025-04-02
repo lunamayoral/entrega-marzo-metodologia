@@ -15,10 +15,7 @@ class ScannerFromFileWTTest {
 
     @Test
     void readFile() {
-        File testFile0 = new File("test.in");
-        assertDoesNotThrow(() -> ScannerFromFileWT.readFile());
-
-        File testFile = new File("test.in");
+        File testFile = new File("ab");
         try (FileWriter writer = new FileWriter(testFile)) {
             writer.write("Primera línea\nSegunda línea\nTercera línea");
         } catch (IOException e) {

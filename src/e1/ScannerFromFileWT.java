@@ -13,7 +13,7 @@ public class ScannerFromFileWT {
         }
     }
     public static void readFile() throws FileNotFoundException {
-        Scanner in = new Scanner(new File("test.in"));
+        Scanner in = new Scanner(new File("ab"));
         while (in.hasNextLine()) {
             System.out.println(in.nextLine());
         }
