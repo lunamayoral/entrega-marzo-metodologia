@@ -42,41 +42,9 @@ public class ListayExcepcion<T> {
     }
 
 
-    public Integer division() throws ArithmeticException, IllegalArgumentException {
 
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Ingresa el primer valor: ");
-        String input1 = scanner.nextLine();
-
-        System.out.print("Ingresa el segundo valor: ");
-        String input2 = scanner.nextLine();
-
-        try {
-            // Intentamos convertir las entradas a números enteros
-            Integer num1 = Integer.parseInt(input1);
-            Integer num2 = Integer.parseInt(input2);
-
-            // Verificamos la división entre cero
-            if (num2 == 0) {
-                throw new ArithmeticException("No se puede dividir entre cero.");
-            }
-
-            // Realizamos la división y retornamos el resultado
-            Integer resultado = num1 / num2;
-            System.out.println("El resultado de la división es: " + resultado);
-            return resultado;
-
-        } catch (NumberFormatException e) {
-            // Lanzamos una excepción más descriptiva si los datos no son enteros
-            throw new IllegalArgumentException("Error: Entrada no válida. Por favor ingresa números enteros.", e);
-        } finally {
-            System.out.println("Programa finalizado.");
-            scanner.close();
-        }
     }
-}
+
 
 
 
