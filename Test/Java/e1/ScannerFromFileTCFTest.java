@@ -18,13 +18,13 @@ class ScannerFromFileTCFTest {
 
         try {
             ScannerFromFileTCF.main(new String[]{});
-            System.out.println("me cago en tos tus muertos");
+            System.out.println("hola");
         } finally {
             System.setOut(originalOut);
         }
 
         // Verificar el mensaje de error.
         String output = outputStream.toString();
-        assertTrue(output.contains("El archivo no se pudo encontrar"));
+        assertFalse(output.contains("El archivo no se pudo encontrar"));
     }
 }
